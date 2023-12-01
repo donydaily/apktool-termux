@@ -12,7 +12,7 @@ banner ( ) {
                                }
                                Apktool() {
                                                  cd files
-                                                 export apktool_version=2.7.0
+                                                 export apktool_version=2.9.0
 
 sh -c 'wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_$apktool_version.jar -O $PREFIX/bin/apktool.jar'
 
@@ -20,18 +20,18 @@ chmod +r $PREFIX/bin/apktool.jar
 
 sh -c 'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O $PREFIX/bin/apktool' && chmod +x $PREFIX/bin/apktool
                                                  
-                                                 cd ~/Apktool-termux ; bash apktool.sh
+                                                 cd ~/apktool-termux ; bash apktool.sh
                                                  termux-open-url https://h4ck3r.me/
                                                  
                                                  }
                                                  Java() {
                                                                cd files
                                                                bash java.sh
-                                                               cd ~/Apktool-termux ; bash apktool.sh
+                                                               cd ~/apktool-termux ; bash apktool.sh
                                                                }
                                                                
                                  selection () {
-                                            cd ~/Apktool-termux
+                                            cd ~/apktool-termux
                                             echo -e -n "\e[1;96m Apktool\e[1;96m Termux : \e[0m"
                                             read a
                                             case $a in
