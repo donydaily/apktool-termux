@@ -12,7 +12,7 @@ banner ( ) {
                                }
                                Apktool() {
                                                  cd files
-                                                 export apktool_version=2.9.3
+                                                 export apktool_version=2.11.0
 
 sh -c 'wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_$apktool_version.jar -O $PREFIX/bin/apktool.jar'
 
@@ -21,7 +21,7 @@ chmod +r $PREFIX/bin/apktool.jar
 sh -c 'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O $PREFIX/bin/apktool' && chmod +x $PREFIX/bin/apktool
                                                  
                                                  cd ~/apktool-termux ; bash apktool.sh
-                                                 termux-open-url https://h4ck3r.me/
+                                                 #termux-open-url https://h4ck3r.me/
                                                  
                                                  }
                                                  Java() {
